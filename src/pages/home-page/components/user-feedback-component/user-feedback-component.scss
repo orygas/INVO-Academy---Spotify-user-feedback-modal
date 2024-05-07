@@ -1,0 +1,115 @@
+.user-feedback-component {
+    max-width: 496px;
+    max-height: 414px;
+    width: 100%;
+    background-color: #292929;
+    padding: 32px;
+    border-radius: 24px;
+
+    @media (max-width: 375px) {
+        max-width: 343px;
+        max-height: 314px;
+        padding: 16px 16px 24px 16px;
+        border-radius: 18px;
+    }
+
+    & &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+        
+        @media (max-width: 375px) {
+            max-height: 90px;
+            margin-bottom: 24px;
+            gap: 10px;
+        }
+    }
+
+    & &__icon-container {
+        @media (max-width:375px) {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    & &__rating-container {
+        margin-bottom: 32px;
+
+        @media (max-width: 375px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    & &__title {
+        max-width: 265px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+
+        @media (max-width: 375px) {
+            max-width: 200px;
+            font-size: 18px;
+            line-height: 1.1;
+        }
+    }
+
+    & &__rates-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        @media (max-width: 375px) {
+            margin-bottom: 12px;
+        }
+    }
+
+    & &__single-rate-tile {
+        width: 80px;
+        height: 64px;
+        border: 1px solid #484848;
+        border-radius: 16px;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+
+        @media (max-width: 375px) {
+            width: 56px;
+            height: 48px;
+            font-size: 18px;
+        }
+
+        &:hover {
+            border-color: #696969;
+            cursor: pointer;
+        }
+
+        &[data-selected] {
+            border-color: var(--primary-color);
+            background-color: rgba(101, 212, 110, .08);
+        }
+    }
+
+    & &__labels-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & &__single-label {
+        max-width: 90px;
+        max-height: 38px;
+        opacity: .5;
+        font-weight: 500;
+
+        &--to-right {
+            text-align: right;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 12px;
+        }
+    }
+}
