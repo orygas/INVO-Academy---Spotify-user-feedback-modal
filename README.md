@@ -8,7 +8,7 @@ Odwzorowanie designu z [pliku Figmy](https://www.figma.com/file/fekk49ThHnKDVMVx
 
 ## Demo
 
-Demo aplikacji dostępne [tutaj](x).
+Demo aplikacji dostępne [tutaj](https://fastidious-beignet-3e4bec.netlify.app/).
 
 ## Funkcjonalności
 
